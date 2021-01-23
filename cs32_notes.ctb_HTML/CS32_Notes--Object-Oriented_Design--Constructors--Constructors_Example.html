@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Constructors Example</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Constructors Example</h1><br/><div class="codebox">class&nbsp;Gassy<br />{<br />	public:<br />	Gassy(int&nbsp;age,&nbsp;bool&nbsp;ateBeans){<br />		m_Age=age;<br />		m_ateBeans=ateBeans;<br />	}<br />	Gassy()&nbsp;//overloaded&nbsp;constructor,&nbsp;this&nbsp;constructor&nbsp;will&nbsp;be&nbsp;generated&nbsp;if&nbsp;it&nbsp;does&nbsp;not&nbsp;exist<br />	{<br />		m_Age=0;<br />		m_ateBeans=false;<br />	}<br /><br />	private:<br />		int&nbsp;m_age;<br />		boolean&nbsp;m_ateBeans;<br />}<br />int&nbsp;main()<br />{<br />	Gassy&nbsp;carey;&nbsp;//Notice&nbsp;that&nbsp;parentheses&nbsp;are&nbsp;not&nbsp;used&nbsp;or&nbsp;they&nbsp;would&nbsp;declare&nbsp;a&nbsp;function<br />	Gassy&nbsp;arr[52];&nbsp;//Calls&nbsp;default&nbsp;constructor&nbsp;52&nbsp;times<br />	Gassy&nbsp;carey(45,false);<br />	Gassy&nbsp;*ptr=new&nbsp;Gassy(1,false)&nbsp;//This&nbsp;is&nbsp;dynamic&nbsp;memory&nbsp;allocation&nbsp;(new&nbsp;keyword)<br />	Gassy&nbsp;*ptr;&nbsp;//This&nbsp;is&nbsp;a&nbsp;null&nbsp;pointer&nbsp;until&nbsp;the&nbsp;constructor&nbsp;is&nbsp;called<br />}<br /><br /></div></div></body></html>

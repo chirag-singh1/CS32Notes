@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Stacks and Queues</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Stacks and Queues</h1><br/>Higher-level data type<br />	Can be implemented using linked list or array<br />	Concept with restricted operations that are not trivial in array/list<br /><br />Intuition: certain operations naturally are in a first in first out or first in last out order<br />	Ex: LIFO order of operations for function calls (function stack)<br />		Recursion<br />	<br />Stack: LIFO<br />	Each new item taken out of the stack is the last one put in<br />	Useful for iterative implementation of recursion<br />	Could use array or linked list, but makes less readable<br />		Declaring as a stack makes easier to understand<br />	Operations:<br />		Create empty stack<br />		Add to empty stack (push)<br />		Remove item from stack (pop)<br />			Note that pop does NOT return a value<br />			Fails if empty<br />				Undefined behavior<br />		Check top item of stack without removing (peek/top)<br />			Fails if empty<br />				Undefined behavior<br />		Check if empty<br /><br />Queue: FIFO<br />	Each new item taken out of stack is the first one put in<br />		Similar to line<br />		Insertion at tail/back, remove at head/front<br />	Often implemented with doubly linked list<br />	Operations:<br />		Create empty queue<br />		Enqueue an item (add to tail)<br />		Dequeue an item (remove from head)<br />		Check top item at head of queue <br />		Check if empty<br /></div></body></html>

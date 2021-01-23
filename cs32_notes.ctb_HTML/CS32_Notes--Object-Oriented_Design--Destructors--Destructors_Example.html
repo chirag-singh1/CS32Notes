@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Destructors Example</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Destructors Example</h1><br/><div class="codebox">class&nbsp;SpotifyPlayer<br />{<br />	public:<br />		SpotifyPlayer(){<br />			//Reserves&nbsp;100&nbsp;MB&nbsp;of&nbsp;space&nbsp;on&nbsp;disk<br />			reserveSpaceOnDisk(1000000);<br />		}<br />		void&nbsp;playSong(string&nbsp;songURL)<br />		{<br />			playMP3InReservedSpace();<br />		}<br />		~SpotifyPlayer()<br />		{<br />			freeReservedSpace();<br />		}<br />}<br />int&nbsp;main()<br />{<br />	for(int&nbsp;i=0;i&lt;100;i++){<br />		SptifyPlayer&nbsp;a;&nbsp;//Will&nbsp;increase&nbsp;memory&nbsp;by&nbsp;100&nbsp;MB&nbsp;each&nbsp;iteration&nbsp;without&nbsp;destructor<br />		a.playSong(&quot;url&quot;);<br />	}<br />}</div></div></body></html>
