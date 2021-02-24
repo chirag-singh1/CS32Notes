@@ -1,8 +1,0 @@
-<!doctype html><html>
-    <head>
-      <meta http-equiv="content-type" content="text/html; charset=utf-8">
-      <title>Destructors</title>
-      <meta name="generator" content="CherryTree">
-      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
-    </head>
-    <body><div class='page'><h1 class='title'>Destructors</h1><br/>Guarantees that allocated memory is freed when an object goes away<br />If memory is not freed, it will eventually cause a memory leak and a class<br />Destructors are unique to a class (cannot be overloaded)<br />Cannot take parameters<br />Implicit destructor will be defined by C++ if not implemented<br />Destructors are needed when a class allocates a system resource:<br />	Reserves memory with new (deallocate memory with delete)<br />	Opens a disk file (close file)<br />	Connects to another computer over network (close connection)<br />Destructors called in specific cases:<br />	Local objects destructors called when go out of scope<br />	Local variables defined in block (like loop) destructed after block)<br />	Dynamically allocated variables destructed when delete is called on them<br />Destructor called N times on an array of N objects<br />When the new keyword is not used, the destructor is called by default automatically<br /></div></body></html>

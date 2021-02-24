@@ -1,8 +1,0 @@
-<!doctype html><html>
-    <head>
-      <meta http-equiv="content-type" content="text/html; charset=utf-8">
-      <title>Copy Constructors</title>
-      <meta name="generator" content="CherryTree">
-      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
-    </head>
-    <body><div class='page'><h1 class='title'>Copy Constructors</h1><br/>Solves problem of changes being made to a variable by pointer in local scope that persist to main thread<br />	Example: array passed to function by pointer is then modified, and those issues will persist when they continue<br />	Can create problem when first function calls delete on copy of function, but destructor is called again later (creates undefined behavior)<br />Occurs when multiple functions with different pointers share an object<br />Called automatically when an object is created from another object<br />	When object is passed as a parameter by value<br />	When object initialized to another object of same type<br />	Returning value from a function (not pointer or reference)<br /></div></body></html>

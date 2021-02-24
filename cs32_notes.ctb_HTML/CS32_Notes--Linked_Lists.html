@@ -1,8 +1,0 @@
-<!doctype html><html>
-    <head>
-      <meta http-equiv="content-type" content="text/html; charset=utf-8">
-      <title>Linked Lists</title>
-      <meta name="generator" content="CherryTree">
-      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
-    </head>
-    <body><div class='page'><h1 class='title'>Linked Lists</h1><br/>Motivation:<br />	Limitations of fixed-size arrays or dynamically allocated arrays<br />		Even dynamically allocated arrays are fixed sized<br />	Resizeable arrays:<br />		Automatically allocates new memory when array is full<br />		Called vector in C++ stdlib<br />		Some operations very quick, but insertion/deletion in the middle much slower<br />			Access times very fast, adding/removing from end very fast<br />		<br />	Goal: Represent collection of items for which inserting and removing in the middle is fast<br />	Linked List:<br />		Each node in linked list contains a value and a pointer to the next node<br />			Doubly linked list contains pointer to both previous and next node<br />		Traversal:<br />			Continue until the pointer of a node is a null pointer<br />			Linked list generally has pointer to head of list (to use it)<br />		Should preserve head (or tail) pointer to avoid memory leak<br />			Empty list represented by head pointer<br />	<br />	Properties to prove when writing p-&gt;:<br />		p cannot be uninitialzied<br />		p cannot be nullptr<br />		Check start and end of list behavior<br />		Check one-item element behavior<br />		<br />	Doubly Linked List:<br />		Each node has a value, a next, and a previous pointer</div></body></html>
